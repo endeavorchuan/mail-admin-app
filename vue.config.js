@@ -11,7 +11,7 @@ module.exports = {
     loaderOptions: {
       less: {
         javascriptEnabled: true,
-      }
-    }
-  }
-}
+      },
+    },
+  },
+};
