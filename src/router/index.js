@@ -53,20 +53,21 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    redirect: '/index',
     meta: {
       title: '首页',
       hidden: false,
       icon: 'home',
     },
     children: [{
-      path: 'index',
+      path: '/index',
       name: 'Index',
       meta: {
         title: '统计',
         icon: 'edit',
         hidden: false,
       },
-      components: () => import('../views/page/index.vue'), // 懒加载，用到的时候才进行加载
+      component: () => import('@/views/page/index.vue'), // 懒加载，用到的时候才进行加载
     }],
   },
   {
