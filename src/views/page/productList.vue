@@ -89,7 +89,6 @@ export default {
           api.remove({
             id: record.id,
           }).then(() => {
-            console.log(this);
             this.getTableData();
           });
         },
